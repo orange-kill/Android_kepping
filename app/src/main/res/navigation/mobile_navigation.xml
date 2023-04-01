@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+
+    <fragment
+        android:id="@+id/navigation_things"
+        android:name="cn.itcast.keeping.ui.things.ThingsFragment"
+        android:label="@string/title_things"
+        tools:layout="@layout/fragment_things" />
+
+    <fragment
+        android:id="@+id/navigation_hobby"
+        android:name="cn.itcast.keeping.ui.hobby.HobbyFragment"
+        android:label="@string/title_hobby"
+        tools:layout="@layout/fragment_hobby" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="cn.itcast.keeping.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/navigation_wreath"
+        android:name="cn.itcast.keeping.ui.wreath.WreathFragment"
+        android:label="@string/title_wreath"
+        tools:layout="@layout/fragment_wreath" />
+
+    <fragment
+        android:id="@+id/navigation_self"
+        android:name="cn.itcast.keeping.ui.self.SelfFragment"
+        android:label="@string/title_self"
+        tools:layout="@layout/fragment_self" />
+
+</navigation>
