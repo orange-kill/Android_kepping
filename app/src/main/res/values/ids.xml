@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="view5" type="id" />
+    <item name="textView7" type="id" />
+    <item name="imageView" type="id" />
+    <item name="textView8" type="id" />
+    <item name="textView9" type="id" />
+    <item name="textView10" type="id" />
+    <item name="textView11" type="id" />
+    <item name="textView12" type="id" />
+    <item name="textView13" type="id" />
+    <item name="flower" type="id" />
+    <item name="message" type="id" />
+    <item name="view" type="id" />
+    <item name="all" type="id" />
+    <item name="speak" type="id" />
+    <item name="read" type="id" />
+    <item name="it_thing" type="id" />
+    <item name="imageView2" type="id" />
+    <item name="frgment" type="id" />
+</resources>

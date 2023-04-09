@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Keeping</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_hobby">习惯</string>
+    <string name="title_self">我的</string>
+    <string name="title_things">要事</string>
+    <string name="title_wreath">花圈</string>
+    <string name="grow">成长</string>
+    <string name="submit">提交</string>
+    <string name="fun">娱乐</string>
+    <string name="add">+</string>
+
+</resources>
