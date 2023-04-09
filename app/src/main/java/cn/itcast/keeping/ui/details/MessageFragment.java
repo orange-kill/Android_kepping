@@ -1,4 +1,4 @@
-package cn.itcast.keeping.ui.things;
+package cn.itcast.keeping.ui.details;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,43 +13,41 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import cn.itcast.keeping.R;
-import cn.itcast.keeping.databinding.FragmentThingsBinding;
-import cn.itcast.keeping.ui.home.HomeFragment;
+import cn.itcast.keeping.databinding.FragmentSelfBinding;
+import cn.itcast.keeping.ui.hobby.HobbyFragment;
+import cn.itcast.keeping.ui.self.SelfViewModel;
 
-public class ThingsFragment extends Fragment {
-    private FragmentThingsBinding binding;
+public class MessageFragment extends Fragment {
+    private FragmentSelfBinding binding;
+    private Button backTa;
+    private HobbyFragment hobbyFragment;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ThingsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(ThingsViewModel.class);
+        SelfViewModel notificationsViewModel =
+                new ViewModelProvider(this).get(SelfViewModel.class);
 
 
 
-        binding = FragmentThingsBinding.inflate(inflater, container, false);
+        binding = FragmentSelfBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textThings;//在fragment_things.xml中的ID
+        final TextView textView = binding.tvSelf;//在fragment_s
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
-        binding.add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                
-            }
-        });
 
-        add = root.findViewById(R.id.add);
-        homeFragment = new HomeFragment();
-        add.setOnClickListener(new View.OnClickListener() {
+        backTa = root.findViewById(R.id.backTa);
+        hobbyFragment = new HobbyFragment();
+        backTa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.nav_host_fragment_activity_main, homeFragment);
+                transaction.replace(R.id.nav_host_fragment_activity_main,hobbyFragment);
                 transaction.addToBackStack(null);
                 transaction.commit();
             }
         });
+
         return root;
     }
 
@@ -58,8 +56,4 @@ public class ThingsFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
-
-    private Button add;
-    private HomeFragment homeFragment;
 }

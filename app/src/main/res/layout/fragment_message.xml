@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:background="#F0EDE916"
+        android:text="不是啊~投入了成本想收回来的动力，哈哈哈！"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="112dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已读"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="194dp"
+        android:layout_height="43dp"
+        android:background="#D55D48"
+        android:text="哇，一开始就喜欢读书吗？我看你赚了好多钱。"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="184dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="127dp"
+        android:layout_height="33dp"
+        android:background="#F0EDE916"
+        android:text="参加了两期，你呢？"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="351dp"
+        tools:srcCompat="@tools:sample/avatars[1]" />
+
+    <Button
+        android:id="@+id/backTa"
+        android:layout_width="57dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@color/white"
+        android:text="⬅"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:text="周杰伦"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-05-13  17:19"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="263dp"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="179dp"
+        android:layout_height="34dp"
+        android:background="#D55D48"
+        android:text="hello,你参加读书圈多久了？"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已读"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="411dp"
+        android:layout_height="80dp"
+        android:background="#CFCACA"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="651dp" />
+
+    <EditText
+        android:id="@+id/et_name7"
+        android:layout_width="277dp"
+        android:layout_height="59dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#938B8B"
+        app:icon="@android:drawable/ic_menu_add"
+        tools:layout_editor_absoluteX="344dp"
+        tools:layout_editor_absoluteY="656dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="61dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#938B8B"
+        android:textColor="@color/black"
+        app:icon="@android:drawable/stat_sys_speakerphone"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="660dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

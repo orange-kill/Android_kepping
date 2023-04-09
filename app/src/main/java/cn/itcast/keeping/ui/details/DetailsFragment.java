@@ -1,4 +1,4 @@
-package cn.itcast.keeping.ui.hobby;
+package cn.itcast.keeping.ui.details;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,11 +16,10 @@ import androidx.lifecycle.ViewModelProvider;
 
 import cn.itcast.keeping.R;
 import cn.itcast.keeping.databinding.FragmentHobbyBinding;
-import cn.itcast.keeping.ui.details.MessageFragment;
 import cn.itcast.keeping.ui.home.HomeViewModel;
 import cn.itcast.keeping.ui.things.ThingsFragment;
 
-public class HobbyFragment extends Fragment {
+public class DetailsFragment extends Fragment {
 
     private FragmentHobbyBinding binding;
 
@@ -53,6 +52,7 @@ public class HobbyFragment extends Fragment {
         ImageView imageView = root.findViewById(R.id.all_read);
         speak= root.findViewById(R.id.speak);
         read = root.findViewById(R.id.read);
+        all = root.findViewById(R.id.all);
         speak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +65,11 @@ public class HobbyFragment extends Fragment {
             public void onClick(View view) {
                 imageView.setImageResource(R.drawable.read);
             }
+        });
+
+        all.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { imageView.setImageResource(R.drawable.read);}
         });
 
         message = root.findViewById(R.id.message);
@@ -88,7 +93,7 @@ public class HobbyFragment extends Fragment {
         binding = null;
     }
 
-    private Button it_thing,speak,read,message;
+    private Button it_thing,speak,read,message,all;
     private ThingsFragment thingsFragment;
     private MessageFragment messageFragment;
 
