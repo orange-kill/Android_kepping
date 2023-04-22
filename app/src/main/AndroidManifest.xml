@@ -43,6 +43,7 @@
             android:name="cn.itcast.keeping.ui.home.HomeFragment"
             tools:ignore="DuplicateActivity,Instantiatable,MissingClass"></activity>
         <activity android:name=".activity.HobbyQuanActivity" />
+        <activity android:name=".activity.EnterHobbyActivity" />
     </application>
 
 </manifest>
