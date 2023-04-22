@@ -1,6 +1,8 @@
 package cn.itcast.keeping.Entity;
 
-public class Hobby {
+import java.io.Serializable;
+
+public class Hobby implements Serializable {
     private String name;//title
     private String sign;//个性签名
     private String detail_one;//

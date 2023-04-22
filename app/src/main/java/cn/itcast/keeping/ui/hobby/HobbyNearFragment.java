@@ -1,10 +1,12 @@
 package cn.itcast.keeping.ui.hobby;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -17,6 +19,7 @@ import java.util.Objects;
 
 import cn.itcast.keeping.Entity.Hobby;
 import cn.itcast.keeping.R;
+import cn.itcast.keeping.activity.HobbyQuanActivity;
 
 public class HobbyNearFragment extends Fragment {
 
@@ -54,6 +57,19 @@ public class HobbyNearFragment extends Fragment {
         }else {
             Log.i("getArguments is", null);
         }
+
+        //为每一个item设置单击事件
+        lv_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Hobby itemAtPosition = (Hobby) lv_list.getItemAtPosition(i);
+                Intent intent  = new Intent(getActivity(), HobbyQuanActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("hobby",itemAtPosition);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 
