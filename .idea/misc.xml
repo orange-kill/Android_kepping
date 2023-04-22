@@ -8,14 +8,21 @@
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_thiings_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_things_24dp.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.10209147135416666" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.28229166666666666" />
-        <entry key="app/src/main/res/layout/fragment_hobby.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_hobby.xml" value="0.17465820312500002" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/fragment_self.xml" value="0.28125" />
         <entry key="app/src/main/res/layout/fragment_things.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_wreath.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/hobby_list.xml" value="0.268280029296875" />
+        <entry key="app/src/main/res/layout/item_hobby.xml" value="0.13125" />
+        <entry key="app/src/main/res/layout/item_hobby_list.xml" value="0.17255434782608695" />
+        <entry key="app/src/main/res/layout/list_hobby.xml" value="0.28125" />
+        <entry key="app/src/main/res/layout/list_hobby_near.xml" value="0.15803731282552086" />
+        <entry key="app/src/main/res/layout/litem_hobby_near_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/rounded_rectangle.xml" value="0.28125" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
