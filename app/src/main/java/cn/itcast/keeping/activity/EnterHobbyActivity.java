@@ -73,7 +73,6 @@ public class EnterHobbyActivity extends FragmentActivity {
 // 提交FragmentTransaction事务
                 fragmentTransaction.commit();
 
-
             }
         });
     }
