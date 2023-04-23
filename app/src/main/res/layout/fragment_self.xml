@@ -1,14 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.self.SelfFragment">
-
-    <TextView
-        android:id="@+id/tv_self"
-        android:layout_width="match_parent"
+    tools:context=".ui.self.SelfFragment"
+    android:background="@drawable/my_bg2">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginLeft="330dp">
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/setting"/>
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/iv_setting"
+            android:src="@drawable/message"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/my_bg"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/head" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_head"
+                android:layout_marginLeft="145dp"
+                android:text="自律的小懒"
+                android:textSize="23sp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/replay"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/iv_replay"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/replay" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的复盘"
+                android:layout_toRightOf="@id/iv_replay"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/iv_achievement"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/achievement" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点滴成就"
+                android:layout_toRightOf="@id/iv_achievement"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/share" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="分享【懒人】给好友"
+                android:layout_toRightOf="@id/iv_share"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/iv_help"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/help" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="帮助中心"
+                android:layout_toRightOf="@id/iv_help"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
