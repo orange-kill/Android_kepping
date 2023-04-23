@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import cn.itcast.keeping.MainActivity;
 import cn.itcast.keeping.R;
 
 public class ChoseSexActivity extends AppCompatActivity {
@@ -36,7 +37,7 @@ public class ChoseSexActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.putExtra("sex","male");
-                intent.setClass(ChoseSexActivity.this,ChoseCircleActivity.class);
+                intent.setClass(ChoseSexActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +50,7 @@ public class ChoseSexActivity extends AppCompatActivity {
                 intent.putExtra("sex","female");
                 intent.putExtra("phoneNumber",number);
                 intent.putExtra("uerName",name);
-                intent.setClass(ChoseSexActivity.this,ChoseCircleActivity.class);
+                intent.setClass(ChoseSexActivity.this,MainActivity.class);
                 startActivity(intent);
             }
         });
