@@ -1,14 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.hobby.HobbyFragment">
 
-    <TextView
-        android:id="@+id/text_hobby"
+    <RelativeLayout
+        android:id="@+id/fragment_hobby"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/hobby_navigation_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_hobby_quan"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="圈儿"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_hobby_quan_bar_line"
+                        android:layout_width="100dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/tv_hobby_quan"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/purple_200"
+                        android:padding="20dp"
+                        android:text="@null" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_hobby_near"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="附近"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_hobby_near_bar_line"
+                        android:layout_width="100dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/tv_hobby_near"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/white"
+                        android:padding="20dp"
+                        android:text="@null" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_marginTop="20dp"
+                android:id="@+id/sv_hobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hobby_navigation_top"
+                android:layout_marginLeft="20dp"
+                app:iconifiedByDefault="false"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray"
+                app:queryHint="读书" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/one"
+            android:id="@+id/quan_fragment"
+            android:name="cn.itcast.keeping.ui.hobby.HobbyQuanFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
